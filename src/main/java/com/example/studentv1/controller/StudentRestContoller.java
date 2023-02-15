@@ -18,6 +18,7 @@ public class StudentRestContoller {
 
     @GetMapping("/students")
     public List<Student> students() {
+
         return studentRepository.findAll();
     }
 
